@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<!--<meta http-equiv="refresh"/> -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Exo|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css'>
+	
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/media-query.css"> <!-- CSS Media-q -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>touching the void</title>
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+
+<body data-hijacking="off" data-animation="opacity"> 
+
+<!--<input type="button" class="play" value="PLAY"  onclick="play()">-->
+	
+  <div class="wrapper">
+
+    <label id="drop" class="toggle hidden-dk"><i class="fa fa-bars"></i></label>
+    <input type="checkbox" id="drop">
+
+      
+    <nav class="nav-container">
+		<ul class="menu1 disply-dk hidden-md hidden-sm">
+            
+            <li><a href="index.html#getstory" class="menu-item-1st">GET THE<br>STORY</a></li>
+            <li><a href="index.html#getstory" class="menu-item-2nd">20.540</a></li>
+
+            <li><a href="index.html#gallery" class="menu-item-1st">GALLERY</a></li>
+            <li><a href="index.html#gallery" class="menu-item-2nd">15.000</a></li>
+
+            <li><a href="index.html#cast" class="menu-item-1st">CAST</a></li>
+            <li><a href="index.html#cast" class="menu-item-2nd">10.000</a></li>
+
+            <li><a href="index.html" class="menu-item-1st">START</a></li>
+            <li><a href="index.html" class="menu-item-2nd">0.1</a></li>
+		</ul>
+	</nav>
+      
+<section class="cd-section visible">
+    <div>
+        <div class="homepagetitle"> 
+            <h1 class="title1">TOUCHING THE VOID</h1> 
+            <h3 class="title2">Based on a true story</h3> 
+        </div>
+  
+    <!--audio sound-->
+	<audio id="audioInHTML" src="img/sound.mp3"></audio>
+		 <!--On homepage load play button click-->	
+			
+
+			<input type="button" class="play" value="PLAY" onClick="PlaySoundAndVideo('videoInHTML'),PlaySoundAndVideo('audioInHTML')">
+
+        <video id="videoInHTML" class="video1">
+            <source src="img/clip1.mp4" type="video/mp4"> 
+            <source src="media/demo.ogv" type="video/ogg" />
+            <source src="media/demo.webm" type="video/webm"/>
+                Your browser doesn't support HTML5 video. Here's a <a target="_blank" href="#">link</a> to download the video.
+        </video>
+    </div>
+</section>
+      
+<!-- section2 --> 
+<section class="cd-section crew-section">
+    <a href="#"><div id="cast"></div></a>
+    <div>
+			
+<!--carousel https://codepen.io/colleen69/pen/dqPXxN-->
+<div class="main-gallery carousel" data-flickity>
+  <div class="gallery-cell">
+    <div class="testimonial">
+        <img class="testimonial-avatar" src="img/simon.png">
+     
+      <span class="testimonial-author">Simon Yates</span>
+    </div>
+  </div>
+  <div class="gallery-cell">
+     <div class="testimonial">
+        <img class="testimonial-avatar" src="img/joe.png">
+    
+      <span class="testimonial-author">Joe Simpson</span>
+    </div>
+  </div>
+  <div class="gallery-cell">
+        <div class="testimonial">
+        <img class="testimonial-avatar" src="img/fred.png">
+      
+      <span class="testimonial-author">Richard Hawking</span>
+    </div>
+  </div>
+</div>
+
+   	<video class="video2">
+       <source src="img/clip7_3.mp4" type="video/mp4">   
+       <source src="media/demo.ogv" type="video/ogg" />
+       <source src="media/demo.webm" type="video/webm"/>
+       Your browser doesn't support HTML5 video. Here's a 
+				<a target="_blank" href="#"></a> to download the video.
+    </video>  
+
+	</div>
+</section>
+
+<!-- section3 -->  
+<section class="cd-section">
+    <a href="#"><div id="gallery"></div></a>
+    <div>      
+        <article class="image-gallery display-dk hidden-md hidden-sm">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+        
+            <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/ga2.jpg"  transform="matrix(0.7071 0.7071 -0.7071 0.7071 381.25 90.5786)">
+            </image>
+
+            <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal2.jpg"  transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 824.4214 232)">
+            </image>
+                <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal3jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 843.3286 232)">
+            </image>
+            <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal4.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 390.8286 384)">
+             </image>
+                <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal5.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 692.8286 384)">
+            </image>
+                <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal7.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 239.8286 536)">
+            </image>
+                <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal8.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 541.5786 536)">
+            </image>
+                <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal9.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 843.3286 536)">
+            </image>
+            </svg>   
+        </article> 
+
+<article class="image-gallery image-gallery hidden-dk display-md display-sm">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 768 1024" style="enable-background:new 0 0 768 1024;" xml:space="preserve">
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/ga2.jpg"  transform="matrix(0.7071 0.7071 -0.7071 0.7071 535.9993 68.8307)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal2.jpg"  transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 677.4179 512.0021)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal3jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 394.5779 813.7493)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal4.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 242.5779 361.2493)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal5.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 242.5779 663.2493)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal7.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 90.5779 210.2493)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal8.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 90.5779 511.9993)">
+        </image>
+
+        <image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="img/gal9.jpg"  transform="matrix(0.7071 -0.7071 0.7071 0.7071 90.5779 813.7493)">
+        </image>
+        </svg>
+
+</article>
+        <video class="video3">
+            <source src="img/clip12.mp4" type="video/mp4">   
+            <source src="media/demo.ogv" type="video/ogg" />
+            <source src="media/demo.webm" type="video/webm"/>
+            Your browser doesn't support HTML5 video. Here's a 
+					<a target="_blank" href="#"></a> to download the video.
+        </video> 
+    </div>
+</section>
+    
+<section class="cd-section">
+    <a href="#"><div id="getstory"></div></a>
+    <div>
+			
+			
+			
+	<article class="buy-info display-dk hidden-md hidden-sm">
+     <div class="buy-dvd-button-div display-dk hidden-md hidden-sm">
+        <h3>if you thought going<br>down is the easy part.</h3>
+           <h1 class="bold">YOU ARE WRONG!</h1>
+            <a href="https://www.takealot.com/touching-the-void/PLID34212069" target="_blank" class="buy-button">BUY NOW</a>
+           <h1 class="h1">To find out more.</h1>  
+       </div>  
+		
+     <object type="img/svg+xml" data="kiwi.svg" class="white">
+         <img src="img/white-div.svg" class="white-svg">
+      </object>
+	</article>
+
+
+ <article class="buy-info hidden-dk display-md display-sm">
+	 <div class="buy-dvd-button-div hidden-dk display-md 	display-sm">
+     <img src="img/dvd.jpg" alt="Touching the void dvd" class="dvd-pic disply-dk disply-md hidden-sm">
+							
+							
+    <div class="buttons">
+			<a class="shear" href="">&nbsp; SHARE </a>
+			<a href="https://www.youtube.com/watch?v=LdgP4T78-zk" target="_blank" class="trailer-button">SEE TRAILER</a>
+    </div>
+							
+			<h3>if you thought going<br>down is the easy part.</h3>
+     	<h1 class="bold">YOU ARE WRONG</h1>
+      <a href="https://www.takealot.com/touching-the-void/PLID34212069" target="_blank" class="buy-button">BUY NOW</a>
+      <h1 class="h1">To find out more</h1>  
+  </div> 
+ </article>
+        
+<article class="see-trailer display-dk hidden-md hidden-sm">
+    <div class="container">
+        <img src="img/dvd.jpg" alt="Touching the void dvd" class="dvd-pic"><br>
+			
+        <div class="buttons">
+            <i class="fa fa-share-alt" aria-hidden="true"><a href="">&nbsp; SHARE </a></i><br><br>
+            <a href="https://www.youtube.com/watch?v=LdgP4T78-zk" target="_blank" class="trailer-button">SEE TRAILER</a>
+        </div>
+			
+      </div>
+    <div class="clearfix"></div>    
+</article> 
+    <video class="video4">
+       <!-- autoplay add event listener -->
+       <source src="img/clip10.mp4" type="video/mp4">   
+       <source src="media/demo.ogv" type="video/ogg" />
+       <source src="media/demo.webm" type="video/webm"/>
+        Your browser doesn't support HTML5 video. Here's a <a target="_blank" href="#"></a> to download the video.
+    </video> 
+			
+    </div>
+</section>
+
+    <div class="scroll-title-container cd-vertical-nav">
+        <img src="img/downbutton.png" class="arrow">
+        <h1 class="scroll-title">SCROLL FOR EXPERIENCE</h1>
+    </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js'></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/velocity.ui.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/colleen.js"></script>
+<script src="js/Carousel.js"></script>
+<!-- For sound and video1 -->		
+<script type="text/javascript" src="http://code.jquery.com/jquery-git.js"></script><script type="text/javascript" src="https://static.bocoup.com/js/popcorn.min.js"></script>		
+      
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
+   
+    </div>
+</body>
+</html>
