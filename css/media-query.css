@@ -104,6 +104,14 @@
     display: block;
 }
   
+.loader{
+	top: 40%;
+}
+
+.loading-text {
+	top: 50%;
+}	
+	
 
 .toggle+a, .menu {
     display: none;
@@ -280,6 +288,16 @@
 
 @media screen and (min-width: 0px) and (max-width: 639px) {
 
+	
+.loader{
+	top: 40%;
+}
+
+.loading-text {
+	top: 55%;
+}	
+	
+	
 .testimonial-avatar {
     width: 200px;
 }

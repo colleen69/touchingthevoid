@@ -41,6 +41,44 @@ a {
   }
 }
 
+#loader-div{
+	height: 100%;
+	width: 100%;
+	background-color: #585857;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+}
+
+.loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 100px;
+}
+
+.loading-text {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	letter-spacing: 2px;
+	
+/*Animate*/
+  opacity:1;  
+  animation: flickerAnimation 1s infinite;
+}
+
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+
 /*-----------SECTION-1-----------
 ------------------------------*/
 
@@ -560,6 +598,10 @@ margin: 0 auto;
 	
 @media screen and (min-width: 0px) and (max-width: 300px) {
 
+.loading-text {
+	margin-top: 30px;
+}		
+	
 .play{
 	top: 15px;
 	left: 40%;
@@ -616,7 +658,6 @@ margin: 0 auto;
 .flickity-page-dots .dot {
   width: 18px;
 }
-
 }
 
 

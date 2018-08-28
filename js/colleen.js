@@ -8,6 +8,10 @@ $('.video4').height('100%')
 
 $( 'cd-section' ).height('100%');
 
+//wait for Page to load svg
+$(window).on('load', function() {
+   $("#loader-div").hide();
+});
 
 /*On page scroll start to play */
 $(document).ready(function() {
@@ -60,6 +64,41 @@ var flkty = new Flickity( '.main-gallery', {
     var soundAndVideo=document.getElementById(soundObj,videoObj);
     soundAndVideo.play();
   }
+
+
+function incrementCounter(element, speed) {
+	if (!($(element).hasClass('completed'))) {
+		$({
+			incCount: $(element).text()
+		}).animate({
+			incCount: $(element).attr('data-num')
+		}, {
+			duration: speed,
+			easing: 'linear',
+			step: function() {
+				$(element).text(Math.floor(this.incCount).toString().replace(/\B(?=(?:\d{3})+(?!\d))/g, ','));
+			},
+			complete: function() {
+				$(element).text((this.incCount).toString().replace(/\B(?=(?:\d{3})+(?!\d))/g, ',')).addClass('completed');
+			}
+		});
+	}
+}
+
+// swap .load for .scroll if scroller is further down the page and want user to see when they scroll down to the number scroller
+$(window).load(function() {
+	if ($('.container-number-scroll').length) {
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = $('.container-number-scroll').offset().top;
+
+		if ((elemTop >= docViewTop)) {
+			incrementCounter('.container-number-scroll .target', 2000);
+		}
+	}
+});
+
 
 
 
