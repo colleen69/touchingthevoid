@@ -13,6 +13,12 @@ $(window).on('load', function() {
    $("#loader-div").hide();
 });
 
+//play video after page is loaded.
+$(window).bind("load", function() {  
+  $('video').load('video');
+}); 
+
+
 /*On page scroll start to play */
 $(document).ready(function() {
     // Get media - with autoplay disabled (audio or video)
